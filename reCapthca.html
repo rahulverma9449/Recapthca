@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A Learning Tech Skills</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        form {
+            background-color: lightblue;
+            width: 500px;
+            border-radius: 10px;
+            padding: 30px 50px;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        
+        .text {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0px;
+            font-size: 18px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+        }
+        
+        .g-recaptcha {
+            margin: 10px 0px;
+        }
+        
+        .button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 10px 0px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #222222;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="?" method="POST">
+        <h1>💊 Medicine booking Form</h1>
+        <label for="name">Customer Name:</label>
+        <input type="text" class="text" placeholder="Customer Name..." required>
+        <label for="email">Email:</label>
+        <input type="text" class="text" placeholder="Email...">
+        <label for="number">Contact Number:</label>
+        <input type="text" class="text" placeholder="Contact Number...">
+        <label for="med_name">Medication Name:</label>
+        <input type="text" id="med_name" name="med_name"><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0"><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+
+        <div class="g-recaptcha" data-sitekey="6LcNDx8pAAAAAHzrJkEXF_HYxxhen3ILeVO4WdKM"></div>
+        <input type="submit" class="button" value="submit">
+    </form>
+
+</body>
+
+</html>
